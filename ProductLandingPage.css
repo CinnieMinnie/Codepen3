@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+body {
+  background: rgba(150, 0, 150, 0.3);
+  background-image: linear-gradient(
+      80deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(https://i.pinimg.com/originals/66/94/d5/6694d5f6404e29761acd3b3dffb505f6.jpg);
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  background-color: #35a4d4;
+}
+
+#header-img {
+  width: 60px;
+  background-color: red;
+}
+
+#nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 10px;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  padding: 30px;
+  margin: 50px auto 0px auto;
+}
+#form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  height: 100px;
+}
+
+#email {
+  width: 70%;
+  height: 25px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+}
+#submit {
+  color: black;
+  width: 25%;
+}
+#what {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  margin-bottom: 80px;
+}
+.features {
+  display: flex;
+}
+.icon {
+  margin: auto 30px;
+}
+.feature-gap {
+  margin-bottom: 10px;
+}
+#globe {
+  width: 50px;
+}
+#video {
+  margin-bottom: 30px;
+}
+#prices {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid #56c486;
+}
+.size {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.pounds {
+  margin: 10px;
+  font-size: 20px;
+}
+.container > ul {
+  margin: 20px;
+  font-size: 20px;
+  list-style: none;
+}
+.buttons {
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #50c4bc;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#bottom-links {
+  display: flex;
+  list-style: none;
+}
+
+#bottom-links > li {
+  margin: 10px;
+}
+footer > span {
+  padding: 10px;
+}
+
+@media (max-width: 769px) {
+  * {
+    font-size: 0.9rem !important;
+  }
+
+  #video {
+    width: 100%;
+  }
+  #globe {
+    width: 15px;
+  }
+  #title {
+    text-align: center;
+  }
+}
